@@ -4,8 +4,8 @@ import { AspectRatio, Flex, Text } from "@chakra-ui/react";
 export default function Localization(){
   return (
     <>
-      <Flex margin='50px auto' maxW='60%' flexDir='column'>
-        <Text  as='samp' textAlign='center' fontSize={['30px','40px']}> Venha nos conhecer! </Text>
+      <Flex margin='50px auto' maxW='80%' flexDir='column'>
+        <Text  as='samp' textAlign='center' fontSize={['25px','30px','40px']}> Venha nos conhecer! </Text>
         <Text textAlign='center' mt='6'> Estamos localizados na Rua Professor Cícero Azevedo, 5, Elói Mendes </Text>
       </Flex>
        
@@ -13,7 +13,7 @@ export default function Localization(){
        <AspectRatio
           border='solid' 
           margin='30px auto'
-          w={['320px','420px','520px','720px']} 
+          w={['280px','320px','420px','520px','720px']} 
           h={['220px','320px','420px']} 
           ratio={14 / 6}
       >

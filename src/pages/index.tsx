@@ -21,7 +21,7 @@ function LandingPage():JSX.Element {
           <Stack spacing='4' alignItems='center'>
             <Flex> 🍻 Cerveja Trincada </Flex>
             <Flex> 🗣 Prosa Fiada </Flex>
-            <Flex> 🍖 Porção Caprichada </Flex>
+            <Flex> 🍖 Porção Caprichada  </Flex>
           </Stack>
   
           <Divider />
@@ -38,24 +38,27 @@ function LandingPage():JSX.Element {
   }
 
   return (
-    <Flex margin='100px auto' maxW='60%' flexDir='column'>
-      <Text  as='samp' textAlign='center' fontSize={['30px','40px','50px','60px']}> Aqui cê tá em casa! </Text>
+    <Flex margin='100px auto'  flexDir='column'>
+      <Text  as='samp' textAlign='center' fontSize={['25px','30px','40px','50px','60px']}> Aqui cê tá em casa! </Text>
       <Flex flexDir='column' margin='80px auto' >
-        <Divider />
 
-        <Stack spacing='10' alignItems='center'>
+        <Stack 
+          spacing='10' 
+          align='center' 
+          display='flex'
+          alignSelf='center'
+        >
           <Flex> 🍻 Cerveja Trincada </Flex>
           <Flex> 🗣 Prosa Fiada </Flex>
           <Flex> 🍖 Porção Caprichada </Flex>
         </Stack>
 
-        <Divider />
       </Flex>
 
       <Flex margin='0 auto'>
         <Stack direction='row' spacing={4} align='center'>
           <Button href="/Home" title="Conheça o Prosa" icon={BiDrink}/>
-          <Button href='https://www.instagram.com/prosacomtorresmo/' title='Instagram' icon={GrInstagram} />
+          <Button href='https://www.instagram.com/prosacomtorresmo/' title='Instagram' icon={GrInstagram} isExternal />
         </Stack>
       </Flex>
     </Flex>
